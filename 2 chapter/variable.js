@@ -21,4 +21,9 @@ let person8
 
 // 以下方式声明变量会报错：
 let person11;
-let person11;
+// let person11;
+
+// 变量拷贝数据
+person9 = 'tom';
+person10 = person9;
+alert(person9);
