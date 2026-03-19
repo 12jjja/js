@@ -1,0 +1,11 @@
+import {Buffer} from "node:buffer";
+let name = 'jack';
+let buf = Buffer.from(name);
+console.log(buf);
+console.log(buf.toString('utf-8'));
+let json = JSON.stringify(buf);
+console.log(json);
+const obj = JSON.parse(json);
+console.log(obj);
+const buf2 = Buffer.from(obj.data);
+console.log(buf2);
